@@ -1,0 +1,74 @@
+.logo-site {
+    width: 100px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.login-container {
+    width: 449px;
+    height: 578px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #222222;
+    margin-bottom: 70px;
+}
+form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+    height: 344px;
+}
+label {
+    display: block;
+}
+input {
+    width: 315px;
+    border-style: none;
+    height: 40px;
+    outline: #ab4bea;
+    transition: all 0.5s ease-in-out;
+    font-size: 1rem;
+}
+input:hover {
+    cursor: pointer;
+}
+input:focus {
+    border-bottom: 1px solid #ab4bea;
+    cursor: pointer;
+}
+button {
+    display: block;
+    height: 64px;
+    width: 318px;
+    font-size: 30px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.link-1, .link-2 {
+    display: block;
+    color: #ab4bea;
+    text-decoration: none;
+}
+.link-1 {
+    margin-top: 53px;
+    margin-bottom: 13px;
+}
+.element::after {
+    content: ">";
+    margin-left: 5px;
+    margin-top: 5px;
+}

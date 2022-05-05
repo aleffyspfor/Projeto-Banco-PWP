@@ -1,0 +1,79 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 30px;
+    background-color: white;
+    position: static;
+}
+ul {
+    display: flex;
+    margin: 0 auto;
+}
+li {
+    color: white;
+    margin: 5px 100px;
+}
+li:hover {
+    border-top: 2px solid #820ad1;
+}
+.active {
+    border-top: 2px solid #820ad1;
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #820ad1;
+}
+h1 {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.card-container {
+    background: #820ad1;
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 21px 16px rgba(0,0,0,0.31);
+    position: relative;
+}
+.chip-img {
+    width: 60px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    border-radius: 5px;
+}
+.bandeira-img {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    top: 0;
+    left: 82%;
+    border-top-right-radius: 10px;
+}
+.logo-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 63%;
+    left: 11%;
+    border-top-right-radius: 10px;
+    color: white;
+    background-repeat: no-repeat;
+}
+.card-nome {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 35%;
+}
