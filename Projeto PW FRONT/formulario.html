@@ -14,10 +14,10 @@
     <div class="container">
         <section class="login-container">
            <h3>Faça Seu login.</h3>
-        <form action="proc.php" method="post" enctype="multipart/form-data">
+        <form action="login.php" method="post" enctype="multipart/form-data" onsubmit="return false">
             <div>
                 <label for="nome"> CPF:</label>
-                <input class="input-nome" type="text" id="nome" name="nome" required oninput="verifica(this)"/> 
+                <input class="input-nome" type="text" id="nome" name="nome" oninput="verifica(this)"/> 
             </div>
             <div>
                 <label for="x"> Senha:</label>  
