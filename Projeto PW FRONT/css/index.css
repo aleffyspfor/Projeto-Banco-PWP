@@ -30,7 +30,8 @@ h1 {
     color: white;
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 50%;
+    transform: translatex(-50%);
 }
 .container {
     display: flex;
@@ -77,3 +78,25 @@ h1 {
     top: 75%;
     left: 35%;
 }
+.color-change-5x {
+	animation: color-change-5x 8s linear infinite alternate both;
+}
+
+ @keyframes color-change-5x {
+    0% {
+      background: #820ad1;
+    }
+    25% {
+      background: #3a2562;
+    }
+    50% {
+      background: #820ad1;
+    }
+    75% {
+      background: #3a2562;
+    }
+    100% {
+      background: #820ad1;
+    }
+  }
+  
