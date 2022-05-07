@@ -3,13 +3,15 @@
 $cpf = $_POST["cpf"];
 $senha = $_POST["senha"];
 
-if($cpf == "06599173004" && $senha==123)
+if($cpf == "11111111111" && $senha==123)
 {
-    header("location:index.html");
+    $_SESSION['usuario'] = ["nome": $cpf, "senha": $senha];
+    header("location:restrito.php");
 }
-else if($cpf == "28686773044" && $senha==123)
+else if($cpf == "22222222222" && $senha==123)
 {
-    header("location:indexAleffy.html");
+    $_SESSION['usuario1'] = ["nome": $cpf, "senha": $senha];
+    header("location:restrito.php");
 }
 else
 {          
