@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginPage.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>Faça Seu login</title>
 </head>
 <body>
-    <header>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Extrato</a></li>
-                <li><a href="#">Crédito</a></li>
-                <li><a href="#">Atendimento</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-            </ul>
-    </header>
-    <h1>Seja Bem-vindo, Abner.</h1>
+    <img class="logo-site" src="img/nubank.svg" alt="">
     <div class="container">
+ main
+        <section class="login-container">
+           <h3>Faça Seu login.</h3>
+        <form action="./php/login.php" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="nome"> CPF:</label>
+                <input class="input-nome" type="text" id="cpf" name="cpf" oninput="verifica(this)"/> 
+            </div>
+            <div>
+                <label for="x"> Senha:</label>  
+                <input class="input-senha" type="password" id="senha" name="senha"/>
+            </div>
+            <button class="btn-entrar" type="submit">Continuar</button>
+            <div class="links-container">
+                    <span>
+                        <a class="element link-1" href="#">Esqueci minha senha</a>
+                    </span>
+                    <span>
+                        <a class="element link-2" href="#">Ainda não sou cliente</a>
+                    </span>
+            </div>
+        </form>
+       </section>
+
         <div class="card-container color-change-5x">
             <img class="chip-img" src="img/chip.jpg" alt="Imagem do Chip" draggable="false">
             <img class="bandeira-img" src="img/bandeira1.svg" alt="Imagem da Bandeira" draggable="false">
             <img class="logo-img" src="img/nubank.svg" alt="Imagem da Logo" draggable="false">
             <h3 class="card-nome">ABNER OLIVEIRA</h2>
         </div>
+main
     </div>
+    <script src="js/validacao.js"></script>
 </body>
 </html>
