@@ -13,14 +13,14 @@
     <div class="container">
         <section class="login-container">
            <h3>Faça Seu login.</h3>
-        <form action="login.php" method="post" enctype="multipart/form-data" onsubmit="return false">
+        <form action="./php/login.php" method="post" enctype="multipart/form-data" onsubmit="return false">
             <div>
                 <label for="nome"> CPF:</label>
-                <input class="input-nome" type="text" id="nome" name="nome" oninput="verifica(this)"/> 
+                <input class="input-nome" type="text" id="cpf" name="cpf" oninput="verifica(this)"/> 
             </div>
             <div>
                 <label for="x"> Senha:</label>  
-                <input class="input-senha" type="password" id="senha" name="senha" required  />
+                <input class="input-senha" type="password" id="senha" name="senha"/>
             </div>
             <button class="btn-entrar" type="submit">Continuar</button>
             <div class="links-container">

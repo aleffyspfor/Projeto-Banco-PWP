@@ -2,14 +2,14 @@
 
 session_start();
 
-    if(!isset($_SESSION['usuario']) || !isset($_SESSION['usuario1'])){
+    if(!isset($_SESSION['abner']) && !isset($_SESSION['aleffy'])){
         header("location:../index.html");
     }
-    else if(isset($_SESSION['usuario']))
+    else if(isset($_SESSION['abner']))
     {
         header("location:../indexAbner.html");
     }
-    else
+    else if (isset($_SESSION['aleffy']))
     {
         header("location:../indexAleffy.html");
     }

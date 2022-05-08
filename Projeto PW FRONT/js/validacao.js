@@ -17,7 +17,7 @@ function verifica(valor) {
 }
 
 let cpf = document.getElementById("cpf");
-let senha = document.getElementById("x");
+let senha = document.getElementById("senha");
 let bt = document.getElementsByTagName("button")[0];
 
 
